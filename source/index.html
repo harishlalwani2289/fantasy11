@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cricket Team Analyzer</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      table {
+        width: 80%;
+        margin: 20px auto;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Cricket Team Analyzer</h1>
+
+    <label>Team ID 1: <input type="number" id="teamId1" value="161" /></label>
+    <label>Team ID 2: <input type="number" id="teamId2" value="26" /></label>
+
+    <label
+      >Series Type:
+      <select id="seriesType">
+        <option value="international">International</option>
+        <option value="league">League</option>
+        <option value="domestic">Domestic</option>
+        <option value="women">Women</option>
+      </select>
+    </label>
+
+    <button id="analyzeBtn">Analyze</button>
+    <div id="resultsContainer"></div>
+    <table>
+      <thead>
+        <tr>
+          <th>Index</th>
+          <th>Name</th>
+          <th>Role</th>
+          <th>Position</th>
+          <th>Team</th>
+        </tr>
+      </thead>
+      <tbody id="playersTable"></tbody>
+    </table>
+  </body>
+  <script type="module" src="index.js"></script>
+</html>
